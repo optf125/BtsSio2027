@@ -1,185 +1,70 @@
-:root {
-    --bleu: #0b6e99;
-    --bleu-fonce: #084d6b;
-    --sable: #f4e9d8;
-    --orange: #e8833a;
-    --texte: #2b2b2b;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #263F43;
     background-color: #F7F1E3;
 }
-
 main {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 30px 0;
 }
-
 h1, h2 {
-    color: var(--bleu-fonce);
-    margin-bottom: 15px;
+    color: #075B68;
+    margin-bottom: 20px;
 }
-
-header {
-    background-color: var(--bleu);
-    color: white;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.moitie {
+    width: 46%;
 }
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.logo span {
-    color: var(--orange);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--orange);
-    text-decoration: underline;
-}
-
-.liste-vehicules {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
-}
-
-.carte {
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s;
-}
-
-.carte:hover {
-    transform: translateY(-6px);
-}
-
-.carte-contenu {
-    padding: 20px;
-}
-
-.carte h3 {
-    color: var(--bleu);
-    margin-bottom: 10px;
-}
-
-.carte img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-.carte figcaption {
-    background-color: var(--bleu-fonce);
-    color: white;
-    font-size: 0.85rem;
-    padding: 6px 20px;
-}
-
-.caracteristiques {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 15px;
-}
-
-.caracteristiques li {
-    background-color: var(--sable);
-    padding: 3px 10px;
-    border-radius: 15px;
-    font-size: 0.85rem;
-}
-
-.prix {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: var(--orange);
-    margin-bottom: 15px;
-}
-
-.prix span {
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: var(--texte);
-}
-
-.bouton {
-    display: inline-block;
-    background-color: var(--orange);
-    color: white;
-    text-decoration: none;
-    padding: 10px 22px;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-
-
-
 .large {
     width: 62%;
 }
-
 .etroit {
     width: 32%;
 }
-
 .bloc {
     padding: 20px;
     margin-bottom: 25px;
 }
-
 .bloc-gauche {
     float: left;
 }
-
 .bloc-droite {
     float: right;
 }
-
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+.bloc-marseille {
+    background-color: #D9F1F2;
+}
 
+.bloc-marseille h3 {
+    color: #087E8B;
+}
+.bloc-nice {
+    background-color: #E3F4F5;
+}
+.bloc-nice h3 {
+    color: #087E8B;
+}
+.bloc-montpellier {
+    background-color: #D9F1F2;
+}
+.bloc-montpellier h3 {
+    color: #087E8B;
+}
 .bloc-offre {
     background-color: #D5EDEF;
 }
-
 .bloc-offre h3 {
     color: #075B68;
 }
@@ -187,38 +72,36 @@ nav a:hover {
     background-color: #F28C6B;
     color: white;
 }
-
 .bloc-promo h3 {
     color: white;
 }
-
 .remise {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
-
 .bloc {
     border: 2px solid #6BBCC4;
     border-radius: 15px;
 }
-
+.bloc-marseille {
+    border-color: #087E8B;
+}
+.bloc-nice {
+    border-color: #3BA7B3;
+}
 .bloc-offre {
     border-color: #087E8B;
 }
-
 .bloc-promo {
     border-color: #D86F52;
 }
-
 .bloc {
     box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
 }
-
 .bloc h3 {
     margin-bottom: 12px;
 }
-
 .bloc img {
     display: block;
     width: 100%;
@@ -226,56 +109,45 @@ nav a:hover {
     border-radius: 10px;
     margin-bottom: 12px;
 }
-
 .bloc .img-gauche {
     float: left;
     width: 45%;
     margin: 0 18px 10px 0;
 }
-
 .bloc p {
     margin-bottom: 10px;
 }
-
 header {
     background-color: #087E8B;
     color: white;
     padding: 15px 30px;
 }
-
 .logo {
     float: left;
     font-size: 1.5rem;
     font-weight: bold;
 }
-
 .logo span {
     color: #F28C6B;
 }
-
 nav {
     float: right;
 }
-
 nav ul {
     list-style: none;
 }
-
 nav li {
     display: inline-block;
     margin-left: 20px;
 }
-
 nav a {
     color: white;
     text-decoration: none;
 }
-
 nav a:hover {
     color: #F28C6B;
     text-decoration: underline;
 }
-
 footer {
     clear: both;
     background-color: #075B68;
@@ -283,16 +155,13 @@ footer {
     text-align: center;
     padding: 25px 20px;
 }
-
 footer address {
     font-style: normal;
     margin-bottom: 10px;
 }
-
 .bloc:hover {
     box-shadow: 6px 10px 18px rgba(0,0,0,0.35);
 }
-
 @media (max-width: 700px) {
     .bloc {
         width: 100%;
