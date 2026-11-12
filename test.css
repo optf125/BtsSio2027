@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #20AFAF 0%,
+    #126767 45%,
+    #701919 75%,
+    #AF2020 100%
+  );
+  background-attachment: fixed;
+  color: #252c36;
+  line-height: 1.7;
+}
+header {
+  background: var(--white);
+  border-bottom: 1px solid #e8ebef;
+  padding: 20px 8%;
+}
+nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 21px;
+  font-weight: bold;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  margin-left: 25px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: var(--secondary);
+}
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 95px 25px 65px;
+  color: white;
+}
+.hero h1  {
+  color: white;
+}
+
+.hero p {
+  color: #ffffff;
+}
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 25px 80px;
+}
+section {
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 35px;
+  margin-bottom: 25px;
+}
+h1,
+h2,
+h3 {
+  color: #000000;
+  font-weight: 700;
+}
+h1 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+h2 {
+  font-size: 23px;
+  margin-bottom: 18px;
+}
+h3 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.goal h2 {
+  color: #000000;
+}
+
